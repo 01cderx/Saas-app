@@ -107,7 +107,8 @@ const CompanionComponent = ({
       clientMessages: ["transcript"],
       serverMessages: [],
     };
-    // @ts-expect-error
+    // @ts-expect-error - Reason: this third-party type is missing from module
+
     vapi.start(configureAssistant(voice, style), assistantOverrides);
   };
 
