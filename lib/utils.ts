@@ -54,9 +54,9 @@ export const configureAssistant = (voice: string, style: string) => {
         },
       ],
     },
-    // @ts-expect-error
+    // @ts-expect-error - this line casts dynamic data to a known shape
     clientMessages: [],
-    // @ts-expect-error
+    // @ts-expect-error  - this line casts dynamic data to a known shape
     serverMessages: [],
   };
   return vapiAssistant;
