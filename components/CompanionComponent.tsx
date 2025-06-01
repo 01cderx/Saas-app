@@ -73,7 +73,7 @@ const CompanionComponent = ({
       vapi.off("speech-start", onSpeechStart);
       vapi.off("speech-end", onSpeechEnd);
     };
-  }, []);
+  }, [companionId]);
 
   useEffect(() => {
     if (lottieRef) {
